@@ -116,7 +116,20 @@ body {
     color: #404bbf;
 }
 
-
+.studio-menu-item {
+    position: relative;
+}
+.studio-menu-list:hover::after, .studio-menu-list:focus::after {
+    width: 48px;
+    height: 4px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #404BBF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+}
 /*================EFFECTIVE=============*/
 .section {
     padding-top: 120px;
@@ -160,7 +173,7 @@ body {
     padding: 16px 32px;
     margin-left: auto;
     margin-right: auto;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-type:hover, .button-type:focus {
     background-color: #404BBF;
@@ -284,7 +297,7 @@ letter-spacing: 0.02em;
     display: block;
     line-height: 0;
     cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .masseger-item:hover, .masseger-item:focus {
     background-color: #404BBF;
@@ -329,7 +342,9 @@ letter-spacing: 0.02em;
 }
 .transformation {
     position: relative;
+    overflow: hidden;
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -341,8 +356,14 @@ letter-spacing: 0.02em;
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 164px;
-    overflow: ;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: tramsform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.transformation:hover .overlay {
+    transform: translateY(0%); 
+
+  }
 
 
 
@@ -361,8 +382,40 @@ letter-spacing: 0.02em;
 .footer-about {
     background: #2E2F42;
     padding: 100px 0;
+    display: flex;
+    
 }
 .footer-logo {
    display: inline-block;
    margin-bottom: 16px;   
+}
+.media-prg {
+    color:  #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+.masseger-icon-footer {
+    display: flex;
+    gap: 24px;  
+}
+.social-media {
+    margin-left: 120px;
+    margin-right: 692px;
+}
+.masseger-item-footer {
+    background-color: #4D5AE5;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    display: block;
+    line-height: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.masseger-item-footer:hover, .masseger-item-footer:focus {
+    background-color: #31D0AA;
 }
