@@ -95,6 +95,7 @@ body {
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-list:hover, .menu-list:focus {
     color: #404BBF;
@@ -109,6 +110,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .data:hover, .data:focus {
     color: #404bbf;
@@ -123,6 +125,11 @@ body {
 .section-main-title {
     background: #2E2F42;
     padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)
+    ), url(../images/people-office.jpg);
+    background-size: cover;
 }
 .main-title {
     color: #FFF;
@@ -135,7 +142,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
-    margin-top: 188px;
 }
 .button-type {
     display: block;
@@ -151,10 +157,10 @@ body {
     height: 56px;
     border: none;
     border-radius: 4px;
-    margin-bottom: 188px;
     padding: 16px 32px;
     margin-left: auto;
     margin-right: auto;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-type:hover, .button-type:focus {
     background-color: #404BBF;
@@ -191,7 +197,40 @@ letter-spacing: 0.02em;
     width: calc((100%-72px)/4);
 }
 
-
+.icon-conteiner-about {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+    margin-bottom: 8px;
+}
+.strategy-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.punctuality-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.diligence-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.technologis-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
 /*============Our team================*/
 .our-team {
     background: #F4F4FD;
@@ -229,7 +268,43 @@ letter-spacing: 0.02em;
 .prg-our-team {
     text-align: center;
 }
-
+.masseger-icon {
+    display: flex;
+    gap: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top: 8px;
+}
+.masseger-item {
+    background-color: #4D5AE5;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    display: block;
+    line-height: 0;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.masseger-item:hover, .masseger-item:focus {
+    background-color: #404BBF;
+}
+.instagram-icon {
+    margin: 12px;
+    fill: #F4F4FD;
+}
+.twiter-icon {
+    margin: 12px;
+    fill: #F4F4FD;
+}
+.facebook-icon {
+    margin: 12px;
+    fill: #F4F4FD;
+}
+.linkedin-icon {
+    margin: 12px;
+    fill: #F4F4FD;
+}
 /*=================OUR PORTFOLIO=============*/
 .portfolio-title {
     margin-bottom: 72px;
@@ -252,8 +327,22 @@ letter-spacing: 0.02em;
     background:#FFF;
     width: 360px;
 }
-
-
+.transformation {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #4D5AE5;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 164px;
+    overflow: ;
+}
 
 
 
