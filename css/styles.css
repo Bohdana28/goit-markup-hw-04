@@ -417,6 +417,10 @@ letter-spacing: 0.02em;
     display: flex;
     gap: 16px;  
 }
+.masseger-item-footer {
+    width: 40px;
+    height: 40px;
+}
 
 .media-footer-prg {
     width: 100%;
@@ -432,17 +436,4 @@ letter-spacing: 0.02em;
 .media-footer-prg:hover, .media-footer-prg:focus {
     background-color: #31D0AA;  
 }
-.masseger-item-footer {
-    background-color: #4D5AE5;
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 50px;
-    display: block;
-    line-height: 0;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.masseger-item-footer:hover, .masseger-item-footer:focus {
-    background-color: #31D0AA;
-}
+
