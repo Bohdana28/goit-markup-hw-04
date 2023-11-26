@@ -435,10 +435,7 @@ letter-spacing: 0.02em;
     display: flex;
     gap: 16px;  
 }
-.social-media {
-    margin-left: 120px;
-    margin-right: 692px;
-}
+
 .media-footer-prg {
     width: 100%;
     height: 100%;
